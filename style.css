@@ -1,0 +1,25 @@
+/* whole document */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    /* remove dot points */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: purple;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+}
