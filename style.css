@@ -48,4 +48,18 @@ nav {
 
 
 /* about section */
+#about {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(2,1fr);
+}
 
+/* contact button */
+#contact {
+    /* fix to bottom right corner */
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: purple;
+}
