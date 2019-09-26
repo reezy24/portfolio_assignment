@@ -12,6 +12,11 @@ li {
     /* remove dot points */
 }
 
+h1 {
+    text-align: center;
+}
+
+/* navigation */
 nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,3 +28,24 @@ nav {
     display: flex;
     margin-left: auto;
 }
+
+/* work section */
+#work {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2,1fr);
+}
+
+#work h1 {
+    /* stretch first row */
+}
+
+#work div {
+    /* one cell each bottom row */
+}
+
+/* career section */
+
+
+
+/* about section */
+
