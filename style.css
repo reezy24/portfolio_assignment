@@ -19,7 +19,7 @@ h1 {
 /* navigation */
 nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
     background-color: purple;
 }
@@ -45,12 +45,70 @@ nav {
 
 /* career section */
 
-
-
 /* about section */
 #about {
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(2,1fr);
+}
+
+#about h1 {
+    order: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.interest {
+
+}
+
+.developing {
+    order: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.github {
+    order: 2;
+}
+
+.linkedin {
+    order: 3;
+}
+
+.music {
+    order: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.system-building {
+    order: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.upwork {
+    order: 6;
+}
+
+.fiverr {
+    order: 7;
+}
+
+.youtube {
+    order: 8;
+}
+
+.patreon {
+    order: 9;
 }
 
 /* contact button */
