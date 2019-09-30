@@ -78,12 +78,19 @@ nav {
     justify-self: end;
 }
 
+/* #work div:hover {
+    width: 95%;
+} */
+
 /* career section */
 
 /* about section */
 #about {
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(2,1fr);
+    grid-template: repeat(6, auto) / repeat(2,1fr);
+    grid-gap: 10px 10px;
+    color: white;   
+    margin-bottom: 100px;
 }
 
 #about h1 {
@@ -92,10 +99,46 @@ nav {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    color: black;
+}
+
+#about h2 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#about p {
+    margin: 10px;
 }
 
 .interest {
+    background-color: purple;
+}
 
+.interest h2 { 
+    margin: 0;
+}
+
+.interest p {
+    margin: 0;
+    padding: 0;
+}
+
+.external {
+    border-radius: 10px;
+    padding: 20px;
+    /* justify-self: center;
+    align-self: center; */
+    /* how to get an even 5px gap all round? */
+    /* how to style buttons? */
+}
+
+.right {
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: 10px;
 }
 
 .developing {
@@ -104,6 +147,7 @@ nav {
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius: 0 10px 10px 0;
 }
 
 .github {
@@ -120,6 +164,7 @@ nav {
     grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 3;
+    border-radius: 10px 0 0 10px;
 }
 
 .system-building {
@@ -128,6 +173,7 @@ nav {
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius: 0 10px 10px 0;
 }
 
 .upwork {
