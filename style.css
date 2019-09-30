@@ -9,7 +9,7 @@ a {
 }
 
 li {
-    /* remove dot points */
+    list-style: none;
 }
 
 h1 {
@@ -55,7 +55,9 @@ nav {
 
 /* contact button */
 #contact {
-    /* fix to bottom right corner */
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
 
 /* footer */
