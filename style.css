@@ -32,15 +32,15 @@ nav {
 /* work section */
 #work {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 #work h1 {
-    /* stretch first row */
+    
 }
 
 #work div {
-    /* one cell each bottom row */
+    
 }
 
 /* career section */
