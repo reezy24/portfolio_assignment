@@ -236,10 +236,28 @@ footer {
 }
 
 /* game portfolio */
+
+/* need to make new tab button a square */
+
 .game-preview {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
+    background-color: purple;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.game-preview h2 {
+    margin: 10px;
+}
+
+.game-preview p {
+    align-self: top;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .technology-icons {
