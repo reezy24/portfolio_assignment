@@ -19,14 +19,32 @@ h1 {
 /* navigation */
 nav {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     align-items: center;
     background-color: purple;
 }
 
+.logo {
+    font-size: 24px;
+    margin: 10px;
+    margin-bottom: 0;
+    color: white;
+}
+
 .nav-links {
     display: flex;
-    margin-left: auto;
+    /* margin: 0 10px 10px auto; */
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white;
 }
 
 /* work section */
