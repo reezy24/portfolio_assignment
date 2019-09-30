@@ -50,15 +50,32 @@ nav {
 /* work section */
 #work {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 
 #work h1 {
-    
+    margin: 20px 0 10px 0;
 }
 
 #work div {
-    
+    background-color: purple;
+    width: 90%;
+    height: 220px;
+    margin: 10px 0;
+}
+
+#work h2 {
+    margin: 10px;
+    color: white;
+}
+
+.websites {
+    border-radius: 0 10px 10px 0;
+}
+
+.games {
+    border-radius: 10px 0 0 10px;
+    justify-self: end;
 }
 
 /* career section */
