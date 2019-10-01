@@ -108,6 +108,11 @@ nav {
 } */
 
 /* career section */
+#career ul {
+    font-size: 28px;
+    line-height: 5rem;
+}
+
 
 /* about section */
 #about {
