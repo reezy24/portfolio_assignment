@@ -84,14 +84,25 @@ nav {
 
 .websites {
     border-radius: 0 10px 10px 0;
-    background-image: url();
+    background-image: url("images/website_test_screenshot.jpg");
 }
 
 .games {
     border-radius: 10px 0 0 10px;
     justify-self: end;
+    background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif")
 }
 
+.games h2 {
+    color: black;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(purple, rgb(0, 0, 0));
+    position: absolute;
+}
 /* #work div:hover {
     width: 95%;
 } */
