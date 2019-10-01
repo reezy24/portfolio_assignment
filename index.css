@@ -1,0 +1,353 @@
+/* whole document */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+  /* need alt font */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  font-family: "Big Shoulders Display";
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* navigation */
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: purple;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 10px;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Big Shoulders Display";
+}
+
+.logo span {
+  color: yellow;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 5px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+/* work section */
+#work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+}
+
+#work h1 {
+  margin: 20px 0 10px 0;
+}
+
+#work div {
+  background-color: purple;
+  width: 90%;
+  height: 220px;
+  margin: 10px 0;
+}
+
+#work h2 {
+  margin: 10px;
+  color: white;
+  text-align: left;
+}
+
+.websites {
+  border-radius: 0 10px 10px 0;
+  background-image: url("images/website_test_screenshot.jpg");
+}
+
+.games {
+  border-radius: 10px 0 0 10px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif") h2;
+  background-image-color: black;
+}
+
+/* career section */
+#career ul {
+  font-size: 28px;
+  line-height: 5rem;
+}
+
+/* about section */
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[6];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(6, auto)/repeat(2, 1fr);
+  grid-gap: 10px 10px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+#about h1 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  color: black;
+}
+
+#about h2 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#about p {
+  margin: 10px;
+}
+
+.interest {
+  background-color: purple;
+}
+
+.interest h2 {
+  margin: 0;
+}
+
+.interest p {
+  margin: 0;
+  padding: 0;
+}
+
+.external {
+  border-radius: 10px;
+  padding: 20px;
+  /* how to style buttons? */
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.left {
+  margin-left: 10px;
+}
+
+.developing {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 0 10px 10px 0;
+}
+
+.github {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.linkedin {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.music {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: 10px 0 0 10px;
+}
+
+.system-building {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 0 10px 10px 0;
+}
+
+.upwork {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+.fiverr {
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+}
+
+.youtube {
+  -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8;
+}
+
+.patreon {
+  -webkit-box-ordinal-group: 10;
+      -ms-flex-order: 9;
+          order: 9;
+}
+
+/* contact button */
+#contact {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: purple;
+  padding: 20px;
+  color: white;
+}
+
+/* blog */
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  background-color: purple;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.post h2 {
+  margin: 10px;
+}
+
+.post h3 {
+  text-align: right;
+  margin: 10px;
+}
+
+.post img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.post p {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 10px;
+}
+
+/* game portfolio */
+/* need to make new tab button a square */
+.game-preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background-color: purple;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+}
+
+.game-preview h2 {
+  margin: 10px;
+}
+
+.game-preview p {
+  -ms-flex-item-align: top;
+      -ms-grid-row-align: top;
+      align-self: top;
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.technology-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-preview img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+}
+/*# sourceMappingURL=index.css.map */
