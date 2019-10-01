@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway'; /* need alt font */
 }
 
 a {
@@ -12,8 +13,14 @@ li {
     list-style: none;
 }
 
-h1 {
+h1, h2, h3, h4 {
     text-align: center;
+    font-family: 'Big Shoulders Display';
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 /* navigation */
@@ -29,6 +36,11 @@ nav {
     margin: 10px;
     margin-bottom: 0;
     color: white;
+    font-family: 'Big Shoulders Display';
+}
+
+.logo span {
+    color: yellow;
 }
 
 .nav-links {
@@ -67,10 +79,12 @@ nav {
 #work h2 {
     margin: 10px;
     color: white;
+    text-align: left;
 }
 
 .websites {
     border-radius: 0 10px 10px 0;
+    background-image: url();
 }
 
 .games {
