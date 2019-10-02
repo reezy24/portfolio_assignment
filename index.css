@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-family: "Raleway";
   /* need alt font */
+  background-color: #fdedfd;
 }
 
 a {
@@ -34,11 +35,16 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: purple;
+  position: fixed;
+  border-radius: 0 40px 10px 0;
+  top: 5px;
+  width: calc(100% - 5px);
 }
 
 .logo {
   font-size: 24px;
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
   margin-bottom: 0;
   color: white;
   font-family: "Big Shoulders Display";
@@ -73,6 +79,7 @@ nav {
   display: grid;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
+  height: 100vh;
 }
 
 #work h1 {
@@ -116,8 +123,8 @@ nav {
       grid-template-rows: repeat(6, auto);
   -ms-grid-columns: auto 1fr;
       grid-template-columns: auto 1fr;
-  font-size: 28px;
-  margin: 10px;
+  font-size: 20px;
+  margin: 20px;
 }
 
 #career h1 {
@@ -127,6 +134,9 @@ nav {
 }
 
 #career i {
+  font-size: 35px;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -163,7 +173,8 @@ nav {
 
 #about h2 {
   margin: 10px;
-  font-size: 18px;
+  font-size: 24px;
+  text-align: left;
 }
 
 #about p {
