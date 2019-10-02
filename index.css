@@ -16,7 +16,6 @@ li {
 }
 
 h1, h2, h3, h4 {
-  text-align: center;
   font-family: "Big Shoulders Display";
   font-size: 48px;
 }
@@ -55,18 +54,18 @@ nav {
 }
 
 .nav-links {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 15px 5px 5px;
 }
 
 .nav-links li {
   margin-left: 20px;
-  margin-right: 10px;
 }
 
 .nav-links a {
@@ -77,41 +76,61 @@ nav {
 #work {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
+  -ms-grid-rows: minmax(120px, auto) min-content min-content auto;
+      grid-template-rows: minmax(120px, auto) -webkit-min-content -webkit-min-content auto;
+      grid-template-rows: minmax(120px, auto) min-content min-content auto;
+  min-height: 640px;
   height: 100vh;
 }
 
-#work h1 {
-  margin: 20px 0 10px 0;
+#work .heading {
+  margin: auto 0 0 0;
+  text-align: center;
 }
 
-#work div {
-  background-color: purple;
-  width: 90%;
-  height: 220px;
-  margin: 10px 0;
-}
-
-#work h2 {
+#work .subheading {
   margin: 10px;
   color: white;
   text-align: left;
 }
 
-.websites {
+#work .big-preview {
+  background-color: purple;
+  width: 90%;
+  height: 200px;
+  margin: 10px 0;
+}
+
+#work .work-section-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#work .work-section-buttons button {
+  margin: 0 10px;
+  width: 30%;
+  font-size: 2.5rem;
+  padding: 0;
+  height: 50px;
+}
+
+#work .websites {
   border-radius: 0 10px 10px 0;
   background-image: url("images/website_test_screenshot.jpg");
 }
 
-.games {
+#work .games {
   border-radius: 10px 0 0 10px;
   -ms-grid-column-align: end;
       justify-self: end;
   background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
 }
 
-.games h2 {
+#work .games h2 {
   color: black;
 }
 
@@ -291,6 +310,7 @@ nav {
   height: 50px;
   width: 80px;
   border-radius: 10px;
+  font-size: 2.5rem;
 }
 
 /* footer */

@@ -2,6 +2,7 @@ $title-font: 'Big Shoulders Display';
 $text-font: 'Raleway';
 $primary-color: purple;
 $secondary-color: yellow;
+$icon-size: 2.5rem;
 
 /* whole document */
 body {
@@ -20,7 +21,7 @@ li {
 }
 
 h1, h2, h3, h4 {
-    text-align: center;
+    // text-align: center;
     font-family: $title-font;
     font-size: 48px;
 }
@@ -54,12 +55,12 @@ nav {
 }
 
 .nav-links {
+    padding: 0;
     display: flex;
-    justify-content: flex-end;
-    margin: 5px;
+    justify-content: center;
+    margin: 5px 15px 5px 5px;
     li {
         margin-left: 20px;
-        margin-right: 10px;
     }
     a {
         color: white;
@@ -69,37 +70,53 @@ nav {
 /* work section */
 #work {
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: minmax(120px, auto) min-content min-content auto;
+    
+    min-height: 640px;
     height: 100vh;
-    h1 {
-        margin: 20px 0 10px 0;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    .heading {
+        margin: auto 0 0 0;
+        text-align: center;
     }
-    div {
-        background-color: $primary-color;
-        width: 90%;
-        height: 220px;
-        margin: 10px 0;
-    }
-    h2 {
+    .subheading {
         margin: 10px;
         color: white;
         text-align: left;
     }
-}
-
-.websites {
-    border-radius: 0 10px 10px 0;
-    background-image: url("images/website_test_screenshot.jpg");
-}
-
-.games {
-    border-radius: 10px 0 0 10px;
-    justify-self: end;
-    background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
-    h2 {
-        color: black;
+    .big-preview {
+        background-color: $primary-color;
+        width: 90%;
+        height: 200px;
+        margin: 10px 0;
+    }
+    .work-section-buttons {
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 10px;
+            width: 30%;
+            font-size: $icon-size;
+            padding: 0;
+            height: 50px;
+        }
+    }
+    .websites {
+        border-radius: 0 10px 10px 0;
+        background-image: url("images/website_test_screenshot.jpg");
+    }
+    .games {
+        border-radius: 10px 0 0 10px;
+        justify-self: end;
+        background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
+        h2 {
+            color: black;
+        }
     }
 }
+
+
 
 /* career section */
 #career {
@@ -108,6 +125,7 @@ nav {
     grid-template-columns: auto 1fr;
     font-size: 20px;
     margin: 20px;
+
     h1 {
         grid-column: 1 / 3;  
     }
@@ -231,6 +249,7 @@ nav {
     height: 50px;
     width: 80px;
     border-radius: 10px;
+    font-size: $icon-size;
 }
 
 /* footer */
