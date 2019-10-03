@@ -161,16 +161,12 @@ nav {
 /* about section */
 #about {
     display: grid;
-    grid-template: repeat(6, auto) / repeat(2,1fr);
-    grid-gap: 10px 10px;
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 10px;
     color: white;   
     margin-bottom: 100px;
     h1 {
         order: 0;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
         color: black;
         text-align: center;
         margin: 0 0 10px 0;
@@ -182,6 +178,17 @@ nav {
     }
     p {
         margin: 10px;
+    }
+    .about-section-buttons {
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 5px;
+            font-size: $icon-size;
+            padding: 0;
+            width: 50px; 
+            height: 50px;
+        }
     }
 }
 
@@ -211,54 +218,18 @@ nav {
 }
 
 .developing {
-    order: 1;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
     border-radius: 0 10px 10px 0;
-}
-
-.github {
-    order: 2;
-}
-
-.linkedin {
-    order: 3;
+    margin-right: 10px;
 }
 
 .music {
-    order: 4;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 3;
     border-radius: 10px 0 0 10px;
+    margin-left: 10px;
 }
 
 .system-building {
-    order: 5;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 2;
     border-radius: 0 10px 10px 0;
-}
-
-.upwork {
-    order: 6;
-}
-
-.fiverr {
-    order: 7;
-}
-
-.youtube {
-    order: 8;
-}
-
-.patreon {
-    order: 9;
+    margin-right: 10px;
 }
 
 /* contact button */
@@ -274,7 +245,7 @@ nav {
 
 /* footer */
 footer {
-    text-align: center;
+    // text-align: center;
     background-color: $primary-color;
     padding: 20px;
     color: white;
