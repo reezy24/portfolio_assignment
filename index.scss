@@ -119,15 +119,15 @@ nav {
 #career {
     display: grid;
     grid-template-rows: minmax(min-content, 25%) repeat(6, min-content);
-    grid-template-columns: auto 1fr;
+    grid-template-columns: min-content auto;
     font-size: 20px;
     margin: 0 20px;
     height: 100vh;
-    // justify-items:center;
+    justify-content: center;
     .heading {
         grid-column: 1 / 3;  
         text-align: center;
-        margin: auto 0 0 0;
+        margin: auto 0 10px 0;
     }
     .icon {
         font-size: 35px;
@@ -172,6 +172,8 @@ nav {
         grid-row-start: 1;
         grid-row-end: 2;
         color: black;
+        text-align: center;
+        margin: 0 0 10px 0;
     }
     h2 {
         margin: 10px;
