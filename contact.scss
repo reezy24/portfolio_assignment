@@ -71,183 +71,6 @@ nav {
     }
 }
 
-/* work section */
-#work {
-    display: grid;
-    grid-template-rows: minmax(120px, auto) min-content min-content auto;
-    min-height: 640px;
-    height: 100vh;
-    .heading {
-        margin: auto 0 0 0;
-        text-align: center;
-    }
-    .subheading {
-        margin: 10px;
-        color: white;
-        text-align: left;
-    }
-    .big-preview {
-        background-color: $primary-color;
-        width: 90%;
-        height: 200px;
-        margin: 10px 0;
-    }
-    .work-section-buttons {
-        display: flex;
-        justify-content: center;
-        button {
-            margin: 0 10px;
-            width: 30%;
-            font-size: $icon-size;
-            padding: 0;
-            height: 50px;
-        }
-    }
-    .websites {
-        border-radius: 0 10px 10px 0;
-        background-image: url("images/website_test_screenshot.jpg");
-    }
-    .games {
-        border-radius: 10px 0 0 10px;
-        justify-self: end;
-        background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
-        h2 {
-            color: black;
-        }
-    }
-}
-
-
-
-/* career section */
-#career {
-    display: grid;
-    grid-template-rows: minmax(min-content, 25%) repeat(6, min-content);
-    grid-template-columns: min-content auto;
-    font-size: 20px;
-    margin: 0 20px;
-    height: 100vh;
-    justify-content: center;
-    .heading {
-        grid-column: 1 / 3;  
-        text-align: center;
-        margin: auto 0 10px 0;
-    }
-    .icon {
-        font-size: 35px;
-        justify-self: center;
-        align-self: center;
-    }
-    p {
-        margin: 10px; 
-    }
-    .career-section-buttons {
-        grid-column: 1 / 3;
-        grid-row: 2 / 4;
-        display: flex;
-        justify-content: center;
-        i {
-            font-size: $icon-size;
-        }
-        button {
-            width: 50px;
-            height: 50px;
-            padding: 0;
-            margin: 0 10px;
-        }
-        .resume {
-            width: 120px;
-        }
-    }
-}
-
-
-/* about section */
-#about {
-    display: grid;
-    grid-template-rows: repeat(4, min-content);
-    grid-gap: 10px;
-    color: white;   
-    margin-bottom: 100px;
-    h1 {
-        order: 0;
-        color: black;
-        text-align: center;
-        margin: 0 0 10px 0;
-    }
-    h2 {
-        margin: 10px;
-        font-size: 24px;
-        text-align: left;
-    }
-    p {
-        margin: 10px;
-    }
-    .about-section-buttons {
-        display: flex;
-        justify-content: center;
-        button {
-            margin: 0 5px;
-            font-size: $icon-size;
-            padding: 0;
-            width: 50px; 
-            height: 50px;
-        }
-    }
-}
-
-.interest {
-    background-color: $primary-color;
-    h2 { 
-        margin: 0;
-    }
-    p {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.external {
-    border-radius: 10px;
-    padding: 20px;
-    /* how to style buttons? */
-}
-
-.right {
-    margin-right: 10px;
-}
-
-.left {
-    margin-left: 10px;
-}
-
-.developing {
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-}
-
-.music {
-    border-radius: 10px 0 0 10px;
-    margin-left: 10px;
-}
-
-.system-building {
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-}
-
-/* contact button */
-#contact {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    height: 50px;
-    width: 80px;
-    border-radius: 10px;
-    font-size: $icon-size;
-    box-shadow: -3px -3px 2px rgba(0, 0, 0, 0.5);
-}
-
 /* footer */
 footer {
     // text-align: center;
@@ -256,39 +79,27 @@ footer {
     color: white;
 }
 
-/* game portfolio */
-
-/* need to make new tab button a square */
-
-.game-preview {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(2, 1fr);
-    background-color: $primary-color;
-    border-radius: 10px;
-    color: white;
-    margin: 10px;
+// input fields
+h1 {
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-.game-preview h2 {
-    margin: 10px;
-}
-
-.game-preview p {
-    align-self: top;
-    margin: 0;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.technology-icons {
-    display: flex;
-}
-
-.game-preview img {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+form {
     padding: 10px;
+    text-align: center;
+}
+
+input, button {
+    width: calc(100% - 20px);
+    margin: 5px;
+    max-width: 500px;
+}
+
+button {
+    height: 50px;
+}
+.message {
+    height: 300px;
 }
