@@ -81,7 +81,7 @@ nav {
     width: 80px;
     border-radius: 10px;
     font-size: $icon-size;
-    box-shadow: -3px -3px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px -3px 2px rgba(129, 66, 66, 0.5);
 }
 
 /* footer */
@@ -93,6 +93,10 @@ footer {
 }
 
 /* blog */
+.grid {
+    max-width: 1024px;
+    margin: 0 auto;
+}
 h1 {
     text-align: center;
     margin-top: 100px;
@@ -135,4 +139,18 @@ h1 {
     grid-column-end: 3;
     margin: 10px;
     font-size: 14px;
+}
+
+@media only screen and (min-width: 568px) {
+    .grid {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    }
 }

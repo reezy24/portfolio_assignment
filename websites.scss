@@ -26,13 +26,14 @@ h1, h2, h3, h4 {
     font-size: 48px;
 }
 
-h2 { 
+h2 {
     font-size: 28px;
 }
 
 button {
     background-color: $secondary-color;
 }
+
 /* navigation */
 nav {
     display: grid;
@@ -147,5 +148,24 @@ h1 {
     button {
         border-radius: 10px;
         font-size: $icon-size;
+    }
+}
+
+.grid {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 568px) {
+    .grid {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
 }
