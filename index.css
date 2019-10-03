@@ -134,11 +134,12 @@ nav {
   border-radius: 10px 0 0 10px;
   -ms-grid-column-align: end;
       justify-self: end;
-  background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
+  background-image: url("images/game.gif");
+  background-size: 100%;
 }
 
 #work .games h2 {
-  color: black;
+  color: white;
 }
 
 /* career section */
