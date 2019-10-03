@@ -145,9 +145,9 @@ nav {
 #career {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(min-content, 25%) (min-content)[6];
-      grid-template-rows: minmax(-webkit-min-content, 25%) repeat(6, -webkit-min-content);
-      grid-template-rows: minmax(min-content, 25%) repeat(6, min-content);
+  -ms-grid-rows: (min-content)[6];
+      grid-template-rows: repeat(6, -webkit-min-content);
+      grid-template-rows: repeat(6, min-content);
   -ms-grid-columns: min-content auto;
       grid-template-columns: -webkit-min-content auto;
       grid-template-columns: min-content auto;
@@ -157,6 +157,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #career .heading {
@@ -220,6 +222,7 @@ nav {
   height: 100vh;
   -ms-flex-line-pack: center;
       align-content: center;
+  max-width: 600px;
 }
 
 #about h1 {
@@ -321,9 +324,6 @@ footer {
 }
 
 @media only screen and (min-width: 568px) {
-  body {
-    background-color: lightblue;
-  }
   nav {
     -ms-grid-rows: 1fr;
     -ms-grid-columns: 1fr 1fr;
@@ -336,6 +336,7 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-right: 30px;
   }
   #work {
     display: -ms-grid;
@@ -401,7 +402,10 @@ footer {
     -ms-grid-columns: (1fr)[3];
         grid-template: repeat(3, -webkit-min-content)/repeat(3, 1fr);
         grid-template: repeat(3, min-content)/repeat(3, 1fr);
-    margin: 10px;
+    margin: 10px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #about h1 {
     -ms-grid-column: 1;
