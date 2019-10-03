@@ -217,6 +217,9 @@ nav {
   grid-gap: 10px;
   color: white;
   margin-bottom: 100px;
+  height: 100vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #about h1 {
@@ -387,23 +390,32 @@ footer {
     padding: 0;
     height: 50px;
   }
-  #work .websites {
-    border-radius: 0 10px 10px 0;
-    background-image: url("images/website_test_screenshot.jpg");
-  }
-  #work .games {
-    border-radius: 10px 0 0 10px;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
-  }
-  #work .games h2 {
-    color: black;
-  }
   .career-section-buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #about {
+    -ms-grid-rows: (-webkit-min-content)[3];
+    -ms-grid-rows: (min-content)[3];
+    -ms-grid-columns: (1fr)[3];
+        grid-template: repeat(3, -webkit-min-content)/repeat(3, 1fr);
+        grid-template: repeat(3, min-content)/repeat(3, 1fr);
+    margin: 10px;
+  }
+  #about h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  #about .about-section-buttons {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  #about .interest {
+    border-radius: 10px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

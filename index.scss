@@ -169,6 +169,8 @@ nav {
     grid-gap: 10px;
     color: white;   
     margin-bottom: 100px;
+    height: 100vh;
+    align-content: center;
     h1 {
         order: 0;
         color: black;
@@ -305,20 +307,22 @@ footer {
                 height: 50px;
             }
         }
-        .websites {
-            border-radius: 0 10px 10px 0;
-            background-image: url("images/website_test_screenshot.jpg");
-        }
-        .games {
-            border-radius: 10px 0 0 10px;
-            justify-self: end;
-            background-image: url("https://cdn.discordapp.com/attachments/413583163114258438/502081889713258496/fishies.gif");
-            h2 {
-                color: black;
-            }
-        }
     }
     .career-section-buttons {
         justify-content: center;
+    }
+    #about {
+        grid-template: repeat(3, min-content) / repeat(3, 1fr);
+        margin: 10px;
+        h1 {
+            grid-column: 1 / 4;
+        }
+        .about-section-buttons {
+            grid-column: 1 / 4;
+        }
+        .interest {
+            border-radius: 10px;
+            margin: 0;
+        }
     }
   }
