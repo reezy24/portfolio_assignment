@@ -319,48 +319,6 @@ footer {
   color: white;
 }
 
-/* blog */
-.post {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-  background-color: purple;
-  margin: 10px;
-  border-radius: 10px;
-  color: white;
-}
-
-.post h2 {
-  margin: 10px;
-}
-
-.post h3 {
-  text-align: right;
-  margin: 10px;
-}
-
-.post img {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.post p {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  grid-row-end: 4;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 10px;
-}
-
 /* game portfolio */
 /* need to make new tab button a square */
 .game-preview {
