@@ -109,4 +109,21 @@ button {
 .message {
   height: 300px;
 }
+
+@media only screen and (min-width: 568px) {
+  nav {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr / 1fr 1fr;
+  }
+  nav .logo {
+    margin-bottom: 5px;
+  }
+  nav .nav-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */
