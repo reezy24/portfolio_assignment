@@ -1,6 +1,5 @@
 @import 'template';
 
-/* work section */
 #work {
     display: grid;
     grid-template-rows: minmax(120px, auto) min-content min-content auto;
@@ -103,7 +102,6 @@
     h1 {
         order: 0;
         color: black;
-        text-align: center;
         margin: 0 0 10px 0;
     }
     h2 {

@@ -1,11 +1,5 @@
 @import 'template';
 
-/* blog */
-h1 {
-    text-align: center;
-    margin-top: 100px;
-}
-
 .post {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
