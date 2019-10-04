@@ -138,13 +138,13 @@ form {
   margin: 0 auto;
 }
 
-input, button {
+.text-field, .submit-button {
   width: calc(100% - 20px);
   margin: 5px;
   max-width: 500px;
 }
 
-button {
+.submit-button {
   height: 50px;
   border-radius: 10px;
 }
