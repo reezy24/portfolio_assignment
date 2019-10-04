@@ -32,7 +32,6 @@ h2 {
 
 button {
   background-color: yellow;
-  border-radius: 10px;
 }
 
 /* navigation */
@@ -304,43 +303,44 @@ footer {
   height: 50px;
 }
 
-#about .interest {
+.interest {
   background-color: purple;
 }
 
-#about .interest h2 {
+.interest h2 {
   margin: 0;
 }
 
-#about .interest p {
+.interest p {
   margin: 0;
   padding: 0;
 }
 
-#about .external {
+.external {
   border-radius: 10px;
   padding: 20px;
+  /* how to style buttons? */
 }
 
-#about .right {
+.right {
   margin-right: 10px;
 }
 
-#about .left {
+.left {
   margin-left: 10px;
 }
 
-#about .developing {
+.developing {
   border-radius: 0 10px 10px 0;
   margin-right: 10px;
 }
 
-#about .music {
+.music {
   border-radius: 10px 0 0 10px;
   margin-left: 10px;
 }
 
-#about .system-building {
+.system-building {
   border-radius: 0 10px 10px 0;
   margin-right: 10px;
 }
