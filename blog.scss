@@ -1,14 +1,11 @@
 @import 'template';
+@import 'grid';
 
-/* blog */
-.grid {
-    max-width: 1024px;
-    margin: 0 auto;
-}
 h1 {
     text-align: center;
     margin-top: 100px;
 }
+
 .post {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -47,18 +44,4 @@ h1 {
     grid-column-end: 3;
     margin: 10px;
     font-size: 14px;
-}
-
-@media only screen and (min-width: 568px) {
-    .grid {
-        display: grid;
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .grid {
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    }
 }
