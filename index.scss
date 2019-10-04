@@ -8,110 +8,116 @@ section {
 
 // work section 
 #work {
+
     grid-template-rows: minmax(120px, auto) min-content min-content auto;
     min-height: 640px;
+
     .heading {
         margin: auto 0 0 0;
         text-align: center;
     }
+
     .subheading {
         margin: 10px;
         color: white;
         text-align: left;
     }
+
     .big-preview {
         background-color: $primary-color;
         width: 90%;
         height: 200px;
         margin: 10px 0;
     }
+
     .work-section-buttons {
         display: flex;
         justify-content: center;
+
         button {
             margin: 0 10px;
-            width: 100%;
-            max-width: 80px;
-            font-size: $icon-size;
             padding: 0;
             height: 50px;
+            width: 100%;
+            max-width: 80px;
         }
+
     }
+
     .websites {
         border-radius: 0 10px 10px 0;
         background-image: url("images/website_test_screenshot.jpg");
     }
+
     .games {
         border-radius: 10px 0 0 10px;
         justify-self: end;
         background-image: url("images/game.gif");
         background-size: 100%;
-        h2 {
-            color: white;
-        }
     }
+
 }
 
 // career section 
 #career {
-    grid-template-rows: repeat(6, min-content);
-    grid-template-columns: min-content auto;
+
+    grid-template: repeat(6, min-content) / min-content auto;
     font-size: 20px;
     margin: 0 20px;
     justify-content: center;
     align-content: center;
     color: black;
+
     .heading {
         grid-column: 1 / 3;  
         text-align: center;
         margin: auto 0 10px 0;
     }
-    p {
+
+    .timeline-text {
         margin: 10px; 
     }
+
     .career-section-buttons {
         order: 10;
         grid-column: 1 / 3;
         display: flex;
-        i {
-            font-size: $icon-size;
-        }
+
         button {
             width: 50px;
             height: 50px;
             padding: 0;
             margin: 10px 10px 0 0;
         }
+
         .resume {
             width: 120px;
         }
+
     }
+
 }
 
 // about section 
 #about {
+
     grid-template-rows: repeat(4, min-content);
     grid-gap: 10px;
-    color: white;   
-    margin-bottom: 100px;
+    color: white;
     align-content: center;
     max-width:600px;
-    h1 {
+
+    .heading {
         order: 0;
         color: black;
         margin: 0 0 10px 0;
     }
-    h2 {
-        margin: 10px;
-        font-size: 24px;
-        text-align: left;
-    }
-    p {
-        margin: 10px;
-    }
+
     .about-section-buttons {
+
         display: flex;
         justify-content: center;
+
         button {
             margin: 0 5px;
             font-size: $icon-size;
@@ -119,99 +125,86 @@ section {
             width: 50px; 
             height: 50px;
         }
+
     }
-}
 
-// interests in about section
-.interest {
-    background-color: $primary-color;
-    h2 { 
-        margin: 0;
+    .interest {
+
+        background-color: $primary-color;
+    
+        .subheading {
+            margin: 10px;
+            font-size: 24px;
+            text-align: left;
+        }
+    
+        .description {
+            margin: 10px;
+            padding: 0;
+        }
+        
     }
-    p {
-        margin: 0;
-        padding: 0;
+
+    .right {
+        margin-right: 10px;
+        border-radius: 0 10px 10px 0;
     }
-}
+    
+    .left {
+        margin-left: 10px;
+        border-radius: 10px 0 0 10px;
+    }
 
-.right {
-    margin-right: 10px;
-}
-
-.left {
-    margin-left: 10px;
-}
-
-.developing {
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-}
-
-.music {
-    border-radius: 10px 0 0 10px;
-    margin-left: 10px;
-}
-
-.system-building {
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
 }
 
 // tablet view and above
 @media only screen and (min-width: 568px) {
+
     #work {
-        display: grid;
-        grid-template-rows: minmax(120px, auto) min-content auto;
-        grid-template-columns: 1fr 1fr;
-        min-height: 640px;
-        height: 100vh;
+
+        grid-template: minmax(120px, auto) min-content auto / 1fr 1fr;
+
         .heading {
             order: -1;
-            margin: auto 0 0 0;
-            text-align: center;
             grid-column: 1 / 3;
         }
-        .subheading {
-            margin: 10px;
-            color: white;
-            text-align: left;
-        }
+
         .big-preview {
-            background-color: $primary-color;
             width: 95%;
             height: 400px;
-            margin: 10px 0;
         }
+
         .work-section-buttons {
+
             order: 10;
-            display: flex;
-            justify-content: center;
             grid-column: 1 / 3;
+
             button {
                 margin: 0 2.5%;
-                width: 30%;
-                font-size: $icon-size;
-                padding: 0;
-                height: 50px;
             }
+
         }
+
     }
+
     .career-section-buttons {
         justify-content: center;
     }
+
     #about {
+
         grid-template: repeat(3, min-content) / repeat(3, 1fr);
         margin: 10px auto;
-        justify-content: center;
-        h1 {
+
+        .heading, .about-section-buttons {
             grid-column: 1 / 4;
         }
-        .about-section-buttons {
-            grid-column: 1 / 4;
-        }
+
         .interest {
             border-radius: 10px;
             margin: 0;
         }
+
     }
+
   }

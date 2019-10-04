@@ -173,11 +173,10 @@ section {
 
 #work .work-section-buttons button {
   margin: 0 10px;
-  width: 100%;
-  max-width: 80px;
-  font-size: 2.5rem;
   padding: 0;
   height: 50px;
+  width: 100%;
+  max-width: 80px;
 }
 
 #work .websites {
@@ -193,17 +192,13 @@ section {
   background-size: 100%;
 }
 
-#work .games h2 {
-  color: white;
-}
-
 #career {
+  -ms-grid-rows: (-webkit-min-content)[6];
   -ms-grid-rows: (min-content)[6];
-      grid-template-rows: repeat(6, -webkit-min-content);
-      grid-template-rows: repeat(6, min-content);
+  -ms-grid-columns: -webkit-min-content auto;
   -ms-grid-columns: min-content auto;
-      grid-template-columns: -webkit-min-content auto;
-      grid-template-columns: min-content auto;
+      grid-template: repeat(6, -webkit-min-content)/min-content auto;
+      grid-template: repeat(6, min-content)/min-content auto;
   font-size: 20px;
   margin: 0 20px;
   -webkit-box-pack: center;
@@ -222,7 +217,7 @@ section {
   margin: auto 0 10px 0;
 }
 
-#career p {
+#career .timeline-text {
   margin: 10px;
 }
 
@@ -236,10 +231,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#career .career-section-buttons i {
-  font-size: 2.5rem;
 }
 
 #career .career-section-buttons button {
@@ -259,28 +250,17 @@ section {
       grid-template-rows: repeat(4, min-content);
   grid-gap: 10px;
   color: white;
-  margin-bottom: 100px;
   -ms-flex-line-pack: center;
       align-content: center;
   max-width: 600px;
 }
 
-#about h1 {
+#about .heading {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
   color: black;
   margin: 0 0 10px 0;
-}
-
-#about h2 {
-  margin: 10px;
-  font-size: 24px;
-  text-align: left;
-}
-
-#about p {
-  margin: 10px;
 }
 
 #about .about-section-buttons {
@@ -300,95 +280,61 @@ section {
   height: 50px;
 }
 
-.interest {
+#about .interest {
   background-color: purple;
 }
 
-.interest h2 {
-  margin: 0;
+#about .interest .subheading {
+  margin: 10px;
+  font-size: 24px;
+  text-align: left;
 }
 
-.interest p {
-  margin: 0;
+#about .interest .description {
+  margin: 10px;
   padding: 0;
 }
 
-.right {
+#about .right {
   margin-right: 10px;
-}
-
-.left {
-  margin-left: 10px;
-}
-
-.developing {
   border-radius: 0 10px 10px 0;
-  margin-right: 10px;
 }
 
-.music {
+#about .left {
+  margin-left: 10px;
   border-radius: 10px 0 0 10px;
-  margin-left: 10px;
-}
-
-.system-building {
-  border-radius: 0 10px 10px 0;
-  margin-right: 10px;
 }
 
 @media only screen and (min-width: 568px) {
   #work {
-    display: -ms-grid;
-    display: grid;
+    -ms-grid-rows: minmax(120px, auto) -webkit-min-content auto;
     -ms-grid-rows: minmax(120px, auto) min-content auto;
-        grid-template-rows: minmax(120px, auto) -webkit-min-content auto;
-        grid-template-rows: minmax(120px, auto) min-content auto;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    min-height: 640px;
-    height: 100vh;
+        grid-template: minmax(120px, auto) -webkit-min-content auto/1fr 1fr;
+        grid-template: minmax(120px, auto) min-content auto/1fr 1fr;
   }
   #work .heading {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin: auto 0 0 0;
-    text-align: center;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
   }
-  #work .subheading {
-    margin: 10px;
-    color: white;
-    text-align: left;
-  }
   #work .big-preview {
-    background-color: purple;
     width: 95%;
     height: 400px;
-    margin: 10px 0;
   }
   #work .work-section-buttons {
     -webkit-box-ordinal-group: 11;
         -ms-flex-order: 10;
             order: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
   }
   #work .work-section-buttons button {
     margin: 0 2.5%;
-    width: 30%;
-    font-size: 2.5rem;
-    padding: 0;
-    height: 50px;
   }
   .career-section-buttons {
     -webkit-box-pack: center;
@@ -402,16 +348,8 @@ section {
         grid-template: repeat(3, -webkit-min-content)/repeat(3, 1fr);
         grid-template: repeat(3, min-content)/repeat(3, 1fr);
     margin: 10px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  #about h1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1 / 4;
-  }
-  #about .about-section-buttons {
+  #about .heading, #about .about-section-buttons {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
