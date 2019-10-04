@@ -1,10 +1,15 @@
 @import 'template';
 
-#work {
+// full-height sections 
+section {
     display: grid;
+    height: 100vh;
+}
+
+// work section 
+#work {
     grid-template-rows: minmax(120px, auto) min-content min-content auto;
     min-height: 640px;
-    height: 100vh;
     .heading {
         margin: auto 0 0 0;
         text-align: center;
@@ -47,14 +52,12 @@
     }
 }
 
-/* career section */
+// career section 
 #career {
-    display: grid;
     grid-template-rows: repeat(6, min-content);
     grid-template-columns: min-content auto;
     font-size: 20px;
     margin: 0 20px;
-    height: 100vh;
     justify-content: center;
     align-content: center;
     .heading {
@@ -89,14 +92,12 @@
     }
 }
 
-/* about section */
+// about section 
 #about {
-    display: grid;
     grid-template-rows: repeat(4, min-content);
     grid-gap: 10px;
     color: white;   
     margin-bottom: 100px;
-    height: 100vh;
     align-content: center;
     max-width:600px;
     h1 {
@@ -139,7 +140,6 @@
 .external {
     border-radius: 10px;
     padding: 20px;
-    /* how to style buttons? */
 }
 
 .right {

@@ -61,7 +61,7 @@ nav {
   font-family: "Big Shoulders Display";
 }
 
-.logo span {
+.logo .surname {
   color: yellow;
 }
 
@@ -121,14 +121,17 @@ footer {
   }
 }
 
-#work {
+section {
   display: -ms-grid;
   display: grid;
+  height: 100vh;
+}
+
+#work {
   -ms-grid-rows: minmax(120px, auto) min-content min-content auto;
       grid-template-rows: minmax(120px, auto) -webkit-min-content -webkit-min-content auto;
       grid-template-rows: minmax(120px, auto) min-content min-content auto;
   min-height: 640px;
-  height: 100vh;
 }
 
 #work .heading {
@@ -184,10 +187,7 @@ footer {
   color: white;
 }
 
-/* career section */
 #career {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-rows: (min-content)[6];
       grid-template-rows: repeat(6, -webkit-min-content);
       grid-template-rows: repeat(6, min-content);
@@ -196,7 +196,6 @@ footer {
       grid-template-columns: min-content auto;
   font-size: 20px;
   margin: 0 20px;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,17 +251,13 @@ footer {
   width: 120px;
 }
 
-/* about section */
 #about {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-rows: (min-content)[4];
       grid-template-rows: repeat(4, -webkit-min-content);
       grid-template-rows: repeat(4, min-content);
   grid-gap: 10px;
   color: white;
   margin-bottom: 100px;
-  height: 100vh;
   -ms-flex-line-pack: center;
       align-content: center;
   max-width: 600px;
@@ -319,7 +314,6 @@ footer {
 .external {
   border-radius: 10px;
   padding: 20px;
-  /* how to style buttons? */
 }
 
 .right {
