@@ -41,7 +41,10 @@ h2 {
 
 button {
     background-color: $secondary-color;
-    border-radius: 10px
+    border-radius: 10px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .icon { 
