@@ -134,27 +134,23 @@ footer {
 .post {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-  margin-top: 100px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(3, auto)/repeat(2, 1fr);
   border-radius: 10px;
   color: black;
   max-width: 1024px;
   margin: 100px auto 0;
 }
 
-.post h2 {
+.post .title {
   margin: 10px 10px 0 10px;
 }
 
-.post h3 {
+.post .date {
   text-align: right;
-  margin: 10px;
+  margin: auto 10px 0 10px;
   font-size: 18px;
-  margin-top: auto;
-  margin-bottom: 0;
 }
 
 .post img {
@@ -168,7 +164,7 @@ footer {
   margin: 0 10px;
 }
 
-.post p {
+.post .post-text {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
