@@ -78,6 +78,13 @@ nav {
   color: white;
 }
 
+/* footer */
+footer {
+  background-color: purple;
+  padding: 20px;
+  color: white;
+}
+
 /* contact button */
 #contact {
   position: fixed;
@@ -91,15 +98,24 @@ nav {
           box-shadow: -3px -3px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* footer */
-footer {
-  background-color: purple;
-  padding: 20px;
-  color: white;
+@media only screen and (min-width: 568px) {
+  nav {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr / 1fr 1fr;
+  }
+  nav .logo {
+    margin-bottom: 5px;
+  }
+  nav .nav-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
 }
 
 /* game portfolio */
-/* need to make new tab button a square */
 h1 {
   text-align: center;
   margin-top: 100px;
@@ -178,20 +194,6 @@ h1 {
 }
 
 @media only screen and (min-width: 568px) {
-  nav {
-    -ms-grid-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template: 1fr / 1fr 1fr;
-  }
-  nav .logo {
-    margin-bottom: 5px;
-  }
-  nav .nav-links {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: 30px;
-  }
   .grid {
     display: -ms-grid;
     display: grid;
