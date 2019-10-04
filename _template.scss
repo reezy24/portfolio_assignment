@@ -8,8 +8,9 @@ $icon-size: 2.5rem;
 body {
     margin: 0;
     padding: 0;
-    font-family: $text-font; /* need alt font */
+    font-family: $text-font, sans-serif;
     background-color: rgb(253, 237, 253);
+    color: white;
 }
 
 a {
@@ -20,16 +21,16 @@ li {
     list-style: none;
 }
 
-// input fields
+h1, h2, h3 {
+    font-family: $title-font;
+}
+
 h1 {
     margin-top: 100px;
     margin-bottom: 0;
     text-align: center;
     font-size: 48px;
-}
-
-h1, h2, h3 {
-    font-family: $title-font;
+    color: black;
 }
 
 h2 {
@@ -38,6 +39,14 @@ h2 {
 
 button {
     background-color: $secondary-color;
+    border-radius: 10px
+}
+
+.icon { 
+    font-size: $icon-size;
+    color: black;
+    justify-self: center;
+    align-self: center;
 }
 
 /* navigation */
@@ -55,11 +64,9 @@ nav {
 
 .logo {
     font-size: 24px;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: white;
+    margin: 5px 0 0 10px;
     font-family: $title-font;
+    color: white;
     .surname {
         color: $secondary-color;
     }
@@ -80,7 +87,6 @@ nav {
 
 /* footer */
 footer {
-    // text-align: center;
     background-color: $primary-color;
     padding: 20px;
     color: white;
