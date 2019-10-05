@@ -102,7 +102,6 @@ nav {
 footer {
   background-color: purple;
   padding: 20px;
-  color: white;
 }
 
 /* contact button */
@@ -186,6 +185,13 @@ section {
 #work .websites {
   border-radius: 0 10px 10px 0;
   background-image: url("images/website_test_screenshot.jpg");
+}
+
+#work .websites .subheading {
+  background-color: #3c4043;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 #work .games {

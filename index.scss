@@ -47,6 +47,10 @@ section {
     .websites {
         border-radius: 0 10px 10px 0;
         background-image: url("images/website_test_screenshot.jpg");
+        .subheading {
+             background-color: rgb(60,64,67);
+             width: min-content;
+        }
     }
 
     .games {

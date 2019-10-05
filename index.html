@@ -13,29 +13,29 @@
         <!-- nav bar -->
         <nav>
             <!-- logo -->
-            <a href="index.html" class="logo">ZACHARY<span class="surname">REYES</span></a>
+            <a href="index.html" class="logo" aria-label="view homepage">ZACHARY<span class="surname">REYES</span></a>
             <!-- navigation links -->
             <ul class="nav-links">
-                <li><a href="index.html#work">Work</a></li>
-                <li><a href="index.html#career">Career</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#work" aria-label="view work section">Work</a></li>
+                <li><a href="index.html#career" aria-label="view career section">Career</a></li>
+                <li><a href="index.html#about" aria-label="view about section">About</a></li>
+                <li><a href="blog.html" aria-label="view blog">Blog</a></li>
             </ul>
         </nav>
         <!-- my work -->
         <section id="work"> 
             <h1 class="heading">My Work</h1>
             <!-- websites preview  -->
-            <a href="websites.html" class="big-preview websites">
+            <a href="websites.html" class="big-preview websites" aria-label="view my web portfolio">
                 <h2 class="subheading">Websites</h2>
             </a>
             <!-- github / youtube buttons -->
             <div class="work-section-buttons">
-                <button class="external github"><i class="fab fa-github icon"></i></button>
-                <button class="external youtube"><i class="fab fa-youtube icon"></i></button>
+                <button class="github" aria-label="view my github"><i class="fab fa-github icon"></i></button>
+                <button class="youtube" aria-label="view my youtube channel"><i class="fab fa-youtube icon"></i></button>
             </div>
             <!-- games preview  -->
-            <a href="games.html" class="big-preview games">
+            <a href="games.html" class="big-preview games" aria-label="view my games portfolio">
                 <h2 class="subheading">Games</h2>
             </a>
         </section>
@@ -44,14 +44,14 @@
             <h1 class="heading">Career</h1>
             <!-- resume / linkedin buttons  -->
             <div class="career-section-buttons">
-                <button class="external resume">Resume</button>
-                <button class="external linkedin icon"><i class="fab fa-linkedin"></i></button>
+                <button class="resume" aria-label="view my resume">Resume</button>
+                <button class="linkedin" aria-label="view my linkedin"><i class="fab fa-linkedin icon"></i></button>
             </div>
             <!-- career timeline -->
             <i class="fas fa-graduation-cap icon"></i><p class="timeline-text">Graduated from John Paul College</p>
             <i class="fas fa-user-tie icon"></i><p class="timeline-text">Business Trainee at Logan City Council</p>
             <i class="fas fa-gamepad icon"></i><p class="timeline-text">Indie Game Developer</p>
-            <i class="fas fa-book icon"></i><p class="timeline-text">Student at <a>Coder Academy</a></p>
+            <i class="fas fa-book icon"></i><p class="timeline-text">Student at Coder Academy</p>
         </section>
         <!-- about -->
         <section id="about"> 
@@ -71,14 +71,14 @@
             </div>
             <!-- buttons to external profiles -->
             <div class="about-section-buttons">
-                <button class="external github"><i class="fab fa-github"></i></button>
-                <button class="external linkedin"><i class="fab fa-linkedin"></i></button>
-                <button class="external youtube"><i class="fab fa-youtube"></i></button>
-                <button class="external patreon"><i class="fab fa-patreon"></i></button>
+                <button class="github" aria-label="view my github"><i class="fab fa-github icon"></i></button>
+                <button class="linkedin" aria-label="view my linkedin"><i class="fab fa-linkedin icon"></i></button>
+                <button class="youtube" aria-label="view my youtube channel"><i class="fab fa-youtube icon"></i></button>
+                <button class="patreon" aria-label="view my patreon"><i class="fab fa-patreon icon"></i></button>
             </div>
         </section>
         <!-- contact button  -->
-        <button id="contact" onclick="window.location.href = 'contact.html'"><i class="fas fa-envelope"></i></button>
+        <button id="contact" onclick="window.location.href='contact.html'" aria-label="contact me"><i class="fas fa-envelope icon"></i></button>
     </body>
     <!-- footer  -->
     <footer>
